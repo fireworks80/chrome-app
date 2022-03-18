@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.clock {
+  font-size: 2rem;
+}
+
+.weather {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+}
+
+.weather div {
+  font-size: 1.5rem;
+}
+
+.weather p {
+  font-size: 0.75rem;
+}
+
+.my-name {
+  margin-top: 10px;
+  font-size: 1.4rem;
+}
