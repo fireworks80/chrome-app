@@ -28,7 +28,7 @@ const addTodo = (e) => {
   let currentId = localStorage.getItem('currentId');
   currentId = currentId ? parseInt(currentId) : 0;
 
-  if (target.nodeName !== 'BUTTON') return;
+  if (e.key !== 'Enter') return;
 
   const value = input.value.trim();
 
@@ -43,7 +43,7 @@ const addTodo = (e) => {
 const insertData = () => {
   const inputs = wrap.querySelector('.todo__input');
 
-  inputs.addEventListener('click', addTodo);
+  inputs.addEventListener('keydown', addTodo);
 };
 
 export default function init() {

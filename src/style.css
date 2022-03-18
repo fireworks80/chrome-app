@@ -18,22 +18,25 @@ p {
 }
 
 .wrap {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
 }
 
+.panel {
+  position: fixed;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .clock {
+  top: 2vh;
+  left: 1vw;
   font-size: 2rem;
 }
 
 .weather {
-  position: fixed;
-  top: 10px;
-  right: 10px;
+  left: 1vw;
+  top: 20vh;
   text-align: center;
 }
 
@@ -48,4 +51,60 @@ p {
 .my-name {
   margin-top: 10px;
   font-size: 1.4rem;
+}
+
+/* greeting */
+.greeting {
+  left: 1vw;
+  bottom: 2vh;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  background-color: transparent;
+  border: solid gray;
+  border-width: 0 0 1px;
+  text-align: inherit;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.todo {
+  top: 1vh;
+  right: 1vw;
+}
+
+.todo .input {
+  padding: 5px;
+  border-radius: 5px;
+  border-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.todo__list {
+  list-style: none;
+  padding-left: 0;
+  line-height: 1.5;
+}
+
+.todo__list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0 3px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.todo__list button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.todo__list button:hover {
+  background-color: rgba(255, 255, 255, 1);
 }

@@ -5,11 +5,10 @@ const displayName = (name) => {
 };
 
 const handleInputValue = (e) => {
-  // console.log(e.target);
   const target = e.target;
   const input = e.currentTarget.querySelector('input');
 
-  if (target.tagName !== 'BUTTON') return;
+  if (e.key !== 'Enter') return;
 
   if (!input.value.length) {
     alert('이름을 입력하세요');
@@ -22,7 +21,7 @@ const handleInputValue = (e) => {
 };
 
 const insertName = () => {
-  wrapEl.addEventListener('click', handleInputValue);
+  wrapEl.addEventListener('keydown', handleInputValue);
 };
 
 export default function init() {
