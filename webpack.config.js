@@ -38,7 +38,7 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Momentum',
+      title: 'Clock',
       template: './src/index.html',
     }),
   ],
